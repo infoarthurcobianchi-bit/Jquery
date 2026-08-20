@@ -4,8 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>1º exemplos jquery</title>
+    <Script scr="https://code.jquery.com/jquery-3.6.0.min.js"></Script>
 </head>
 <body>
-    
+    <h1 id="#titulo">titulo antigo</h1>
+    <button id="btn-mudar">mudaar texto</button>
+    <script>
+        $(document).ready(function(){
+            $("btn-mudar").click(function(){
+                $("#titulo").text("texto alterado com Jquery!")
+            })
+
+        } )
+    </script>
 </body>
 </html>
